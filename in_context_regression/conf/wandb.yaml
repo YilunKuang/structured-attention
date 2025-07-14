@@ -1,0 +1,5 @@
+wandb:
+    project: ICL-Functions
+    entity: yilunkuang
+    notes:
+    log_every_steps: 100

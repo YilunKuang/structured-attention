@@ -167,8 +167,22 @@ cython_debug/
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
 
-# Ruff stuff:
-.ruff_cache/
+# Project-Specific Folders
+data/openwebtext_small/
+wandb/
+out/
+plots/flops_comparison.png
 
-# PyPI configuration file
-.pypirc
+# Synthetic Dataset Generation Script
+!data/listops/build_listops.py
+synthetic_gp_data.png
+
+tests/GP_samples_with_mlr_covar_kernel.pth
+tests/samples_from_mlr_covariance.png
+
+tests/GP_samples_with_banded_covar_kernel.pth
+tests/GP_samples_with_inverse_mlr_covar_kernel.pth
+tests/GP_samples_with_rbf_covar_kernel.pth
+tests/samples_from_banded_covariance.png
+tests/samples_from_inverse_mlr_covariance.png
+tests/samples_from_rbf_covariance.png
