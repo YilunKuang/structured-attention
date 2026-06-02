@@ -10,9 +10,9 @@ This repository contains the code for [Customizing the Inductive Biases of Softm
 In this work, we customize the inductive bias of attention by changing the structure of its scoring function. Namely, we make the following contributions:
 
 - **Conceptual Framework of Structured Scoring Functions**: We introduce a conceptual framework for analyzing and modifying the inductive biases of attention through the structure of its underlying linear and (bi-)linear transformations.
-- **Resolving Low Rank Bottleneck**: we apply this framework to eliminate the low-rank bottleneck of standard attention using high-rank Block Tensor Train (BTT) and Multi-Level Low Rank (MLR) matrices, improving performance on an inherently high-dimensional task from the literature. 
-- **Generalization of Structured Matrices Family**: we show that both BTT and MLR matrices—including Monarch, Butterfly, Kronecker, and Low Rank matrices—can be united under a broader structured family which we call Multi-Level Block Tensor Contraction (MLBTC).
-- **Encoding Distance-Dependent Compute Bias**: we use MLR matrices to introduce a distance-dependent compute bias, which slightly outperforms previous methods in language modeling and time series forecasting.
+- **Resolving Low Rank Bottleneck**: we apply this framework to eliminate the low-rank bottleneck of standard attention using high-rank Block Tensor Train (BTT) and contiguous Multi-Level Low Rank (contiguous MLR) matrices, improving performance on an inherently high-dimensional task from the literature. 
+- **Generalization of Structured Matrices Family**: we show that both BTT and contiguous MLR matrices—including Monarch, Butterfly, Kronecker, and Low Rank matrices—can be united under a broader structured family which we call Multi-Level Block Tensor Contraction (MLBTC).
+- **Encoding Distance-Dependent Compute Bias**: we use contiguous MLR matrices to introduce a distance-dependent compute bias, which slightly outperforms previous methods in language modeling and time series forecasting.
 
 ![Figure](./assets/fig1.png)
 
